@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Timer</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="main-container center">
+        <!-- progress indicator -->
+        <div class="circle-container center">
+          <div class="semicircle"></div>
+          <div class="semicircle"></div>
+          <div class="semicircle"></div>
+          <div class="outermost-circle"></div>
+        </div>
+
+        <!-- timer -->
+        <div class="timer-container center">
+          <div class="timer center"></div>
+        </div>
+      </div>
+      <div class="text">
+        <p id="number1"></p>
+          <p id="number2"></p>
+          <p id="number3"></p>
+          <p id="number4"></p>
+          <p id="number5"></p>
+          <p id="number6"></p>
+      </div>
+    </div>
+
+    <button id="btn1" onclick="start();random();this.disabled=true">Generate OTP</button>
+    <button id="btn2" onclick="start();random();this.disabled=true">Regenrate OTP</button>
+    <script src="script1.js"></script>
+    <script src="script2.js"></script>
+  </body>
+</html>
